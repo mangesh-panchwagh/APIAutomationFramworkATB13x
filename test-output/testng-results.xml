@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-09-01T17:25:00 IST" name="Suite" finished-at="2025-09-01T17:25:01 IST" duration-ms="481">
+    <groups>
+      <group name="qa">
+        <method signature="TestIntegrationSample.testCreateBooking()[pri:1, instance:tests.restfulbooker.sample.TestIntegrationSample@7749bf93]" name="testCreateBooking" class="tests.restfulbooker.sample.TestIntegrationSample"/>
+        <method signature="TestIntegrationSample.testVerifyBookingId()[pri:2, instance:tests.restfulbooker.sample.TestIntegrationSample@7749bf93]" name="testVerifyBookingId" class="tests.restfulbooker.sample.TestIntegrationSample"/>
+        <method signature="TestIntegrationSample.testUpdateBookingByID()[pri:3, instance:tests.restfulbooker.sample.TestIntegrationSample@7749bf93]" name="testUpdateBookingByID" class="tests.restfulbooker.sample.TestIntegrationSample"/>
+        <method signature="TestIntegrationSample.testDeleteBookingById()[pri:4, instance:tests.restfulbooker.sample.TestIntegrationSample@7749bf93]" name="testDeleteBookingById" class="tests.restfulbooker.sample.TestIntegrationSample"/>
+      </group> <!-- qa -->
+    </groups>
+    <test started-at="2025-09-01T17:25:00 IST" name="Test" finished-at="2025-09-01T17:25:01 IST" duration-ms="481">
+      <class name="tests.restfulbooker.sample.TestIntegrationSample">
+        <test-method signature="testCreateBooking()[pri:1, instance:tests.restfulbooker.sample.TestIntegrationSample@7749bf93]" started-at="2025-09-01T17:25:00 IST" name="testCreateBooking" finished-at="2025-09-01T17:25:00 IST" duration-ms="169" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateBooking -->
+        <test-method signature="testVerifyBookingId()[pri:2, instance:tests.restfulbooker.sample.TestIntegrationSample@7749bf93]" started-at="2025-09-01T17:25:01 IST" name="testVerifyBookingId" finished-at="2025-09-01T17:25:01 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testVerifyBookingId -->
+        <test-method signature="testUpdateBookingByID()[pri:3, instance:tests.restfulbooker.sample.TestIntegrationSample@7749bf93]" started-at="2025-09-01T17:25:01 IST" name="testUpdateBookingByID" finished-at="2025-09-01T17:25:01 IST" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUpdateBookingByID -->
+        <test-method signature="testDeleteBookingById()[pri:4, instance:tests.restfulbooker.sample.TestIntegrationSample@7749bf93]" started-at="2025-09-01T17:25:01 IST" name="testDeleteBookingById" finished-at="2025-09-01T17:25:01 IST" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteBookingById -->
+      </class> <!-- tests.restfulbooker.sample.TestIntegrationSample -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
