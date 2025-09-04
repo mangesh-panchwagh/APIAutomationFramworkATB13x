@@ -21,13 +21,13 @@ import pojos.requestPOJO.restfulbooker.Booking;
 
 public class BookingResponse {
 
-	private Integer bookingId;
+	private Integer bookingid;
 	private Booking booking;
-	public Integer getBookingId() {
-		return bookingId;
+	public Integer getBookingid() {
+		return bookingid;
 	}
-	public void setBookingId(Integer bookingId) {
-		this.bookingId = bookingId;
+	public void setBookingid(Integer bookingid) {
+		this.bookingid = bookingid;
 	}
 	public Booking getBooking() {
 		return booking;
@@ -35,5 +35,6 @@ public class BookingResponse {
 	public void setBooking(Booking booking) {
 		this.booking = booking;
 	}
+	
 	
 }
