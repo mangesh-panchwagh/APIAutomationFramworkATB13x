@@ -1,5 +1,11 @@
 package modules.restfulbooker;
 
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
+
 import com.github.javafaker.Faker;
 import com.google.gson.Gson;
 
@@ -55,7 +61,7 @@ public class PayloadManager {
 	}
 	
 	// Invalid Booking
-	public String createPayloadBokoingAsStringWrongBody() {
+	public String createPayloadBookoingAsStringWrongBody() {
 		
 		Booking booking = new Booking();
 		booking.setFirstname("会意; 會意");
@@ -119,8 +125,70 @@ public class PayloadManager {
         return bookingResponse;
 		
 	}
-
 	
+	public String createBookingPayloadWithMissingFields(String... fieldsToOmit) {
+		
+		Set<String> omitFields  = new HashSet<>(Arrays.asList(fieldsToOmit));
+		Booking booking = new Booking();
+		
+		if(!omitFields.contains("firstname")) {
+			booking.setFirstname("Mangesh");
+		}
+		
+		if(!omitFields.contains("lastname")) {
+			booking.setLastname("Panchwagh");
+		}
+		
+		if(!omitFields.contains("totalprice")) {
+			booking.setTotalprice(112);
+		}
+		
+		if(!omitFields.contains("depositpaid")) {
+			booking.setDepositpaid(true);
+		}
+		
+		if(!omitFields.contains("bookingdates")) {
+			BookingDates bookingDates = new BookingDates(); 
+			bookingDates.setCheckin("2025-02-01");
+			bookingDates.setCheckout("2025-02-05");
+			booking.setBookingdates(bookingDates);	
+		}
+		
+		if(!omitFields.contains("additionalneeds")) {
+			booking.setAdditionalneeds("Breakfast");
+		}
+		
+		Gson gson = new Gson();
+		return gson.toJson(booking);
+	}
+
+	public String createBookingPayloadWithInvalidField(String fieldName, Object invalidValue) {
+		
+		Map<String,Object> booking = new HashMap<>();
+		
+		// Default Valid Values
+		booking.put("firstname", "Mangesh");
+		booking.put("lastname", "Panchwagh");
+		booking.put("totalprice",112);
+		booking.put("depositpaid", true);
+		
+		Map<String,Object> bookingdates = new HashMap<>();
+		bookingdates.put("checkin", "2025-02-01");
+		bookingdates.put("checkout", "2025-02-05");
+		booking.put("bookingdates", bookingdates);
+		
+		booking.put("additionalneeds", "Breakfast");
+		
+		// Override the invalid field directly
+		if("checkin".equalsIgnoreCase(fieldName) || "checkout".equalsIgnoreCase(fieldName)) {
+			bookingdates.put(fieldName.toLowerCase(), String.valueOf(invalidValue));
+		}else {
+			booking.put(fieldName.toLowerCase(), invalidValue);
+		}
+		
+		Gson gson = new Gson();
+		return gson.toJson(booking);
+	}
 	
 	
 	

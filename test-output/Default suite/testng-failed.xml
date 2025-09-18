@@ -6,12 +6,8 @@
       <class name="tests.restfulbooker.crud.TestCreateBooking">
         <methods>
           <include name="setup"/>
-          <include name="testCreateBookingPOST_POSITIVE_CHINISE"/>
           <include name="trardown"/>
-          <include name="testCreateBookingPOST_POSITIVE_FAKER_RANDOM_DATA"/>
-          <include name="testCreateBookingPOST_Positive"/>
-          <include name="testCreateBookingPOST_Negative"/>
-          <include name="testCreateBookingPOST_NEGATIVE_WRONG"/>
+          <include name="testCreateBookingPOST_NEGATIVE_AdditionalNeeds_MISSING"/>
         </methods>
       </class> <!-- tests.restfulbooker.crud.TestCreateBooking -->
     </classes>

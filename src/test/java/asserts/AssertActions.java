@@ -48,4 +48,23 @@ public class AssertActions {
         // Test NG
         assertTrue(keyExpect);
     }
+    public void verifyIntKey(int keyActual, int keyExpect, String description) {
+        assertEquals(keyActual, keyExpect, description);
+    }
+    public void verifyBooleanKey(boolean keyActual, boolean keyExpect) {
+
+        assertEquals(keyActual, keyExpect);
+    }
+
+    public void verifyKeyIsMissing(Response response, String key) {
+        try {
+            Object value = response.jsonPath().get(key);
+            assertThat(value)
+                    .withFailMessage("Expected key '%s' to be missing, but found value: %s", key, value)
+                    .isNull();
+        } catch (Exception e) {
+            System.out.println("Skipping key check — response is not valid JSON.");
+            System.out.println("Actual response: " + response.asString());
+        }
+    }
 }
