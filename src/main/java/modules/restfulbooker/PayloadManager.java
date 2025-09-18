@@ -3,6 +3,7 @@ package modules.restfulbooker;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Set;
 
@@ -188,6 +189,27 @@ public class PayloadManager {
 		
 		Gson gson = new Gson();
 		return gson.toJson(booking);
+	}
+
+	public String createPayloadBookingAsEntireWrongPayload() {
+		
+		Map<String, Object> booking = new HashMap<>();
+		
+		booking.put("firstname", 12345);			  // Integer instead of String
+		booking.put("lastname", "true");			  // Boolean instead of String
+		booking.put("totalprice", "one hundred");	  //String instead of int
+		booking.put("depositpaid", "yes");            // String instead of boolean
+		
+		Map<String, Object> bookingdates = new LinkedHashMap<String, Object>();
+		bookingdates.put("checkin", "02-30-2024");		// Invalid Date string
+		bookingdates.put("checkout", 20240205);			// Integer instead of String
+		
+		booking.put("bookingdates", bookingdates);
+		booking.put("additionalneeds", 458);			// Integer instead of String
+
+		Gson gson = new Gson();
+		return gson.toJson(booking);
+		
 	}
 	
 	

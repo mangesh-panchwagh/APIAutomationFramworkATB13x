@@ -277,5 +277,132 @@ public class TestCreateBooking extends BaseTest {
 		 
 	 }
 	 
+	 @Test(groups="reg",priority=14)
+	 @Owner("Mangesh Panchwagh")
+	 @Description("TC#14 - Verify that the Booking can't be Created,Invalid lastname")
+	 public void testCreateBookingPOST_NEGATIVE_Invalid_Lastname() {
+		 
+		 String payload = payloadManager.createBookingPayloadWithInvalidField("lastname", "548");
+		 
+		 response = RestAssured.given(requestSpecification)
+				 	.when().body(payload)
+				 	.log().all().post();
+		 
+		 validatableResponse = response.then().log().all();
+		 validatableResponse.statusCode(404);
+		 
+		//Validation and verification via the AssertJ, TestNG Part - 3
+		 assertActions.verifyStatusCode(response, 404);
+	 }
 	 
+	 @Test(groups="reg",priority=15)
+	 @Owner("Mangesh Panchwagh")
+	 @Description("TC#15 - Verify that the Booking can't be Created,Invalid TotalPrice")
+	 public void testCreateBookingPOST_NEGATIVE_Invalid_TotalPrice() {
+		 
+		 String payload = payloadManager.createBookingPayloadWithInvalidField("totalprice", "InvalidDataType");
+		 
+		 response = RestAssured.given(requestSpecification)
+				 	.when().body(payload)
+				 	.log().all().post();
+		 
+		 validatableResponse = response.then().log().all();
+		 validatableResponse.statusCode(404);
+		 
+		//Validation and verification via the AssertJ, TestNG Part - 3
+		 assertActions.verifyStatusCode(response, 404);
+	 }
+	 
+	 @Test(groups="reg",priority=16)
+	 @Owner("Mangesh Panchwagh")
+	 @Description("TC#16 - Verify that the Booking can't be Created,Invalid DepositPaid ")
+	 public void testCreateBookingPOST_NEGATIVE_Invalid_DepositPaid() {
+		 
+		 String payload = payloadManager.createBookingPayloadWithInvalidField("depositpaid", "InvalidDataType");
+		 
+		 response = RestAssured.given(requestSpecification)
+				 	.when().body(payload)
+				 	.log().all().post();
+		 
+		 validatableResponse = response.then().log().all();
+		 validatableResponse.statusCode(404);
+		 
+		//Validation and verification via the AssertJ, TestNG Part - 3
+		 assertActions.verifyStatusCode(response, 404);
+	 }
+	 
+	 @Test(groups="reg",priority=17)
+	 @Owner("Mangesh Panchwagh")
+	 @Description("TC#17 - Verify that the Booking can't be Created,Invalid CheckInDate")
+	 public void testCreateBookingPOST_NEGATIVE_Invalid_CheckInDate() {
+		 
+		 String payload = payloadManager.createBookingPayloadWithInvalidField("checkin", "2025-02-01");
+		 
+		 response = RestAssured.given(requestSpecification)
+				 	.when().body(payload)
+				 	.log().all().post();
+		 
+		 validatableResponse = response.then().log().all();
+		 validatableResponse.statusCode(404);
+		 
+		//Validation and verification via the AssertJ, TestNG Part - 3
+		 assertActions.verifyStatusCode(response, 404); 
+	 }
+	 
+	 @Test(groups="reg",priority=18)
+	 @Owner("Mangesh Panchwagh")
+	 @Description("TC#18 - Verify that the Booking can't be Created,Invalid CheckOutDate")
+	 public void testCreateBookingPOST_NEGATIVE_Invalid_CheckOutDate() {
+		 
+		 String payload = payloadManager.createBookingPayloadWithInvalidField("checkout", "InvalidDataType");
+		 
+		 response = RestAssured.given(requestSpecification)
+				 	.when().body(payload)
+				 	.log().all().post();
+		 
+		 validatableResponse = response.then().log().all();
+		 validatableResponse.statusCode(404);
+		 
+		//Validation and verification via the AssertJ, TestNG Part - 3
+		 assertActions.verifyStatusCode(response, 404);
+	 }
+	 
+	 @Test(groups = "reg", priority = 19)
+	 @Owner("Mangesh Panchwagh")
+	 @Description("TC#19 - Verify that the Booking can't be Created,Invalid AdditionalNeeds")
+	 public void testCreateBookingPOST_NEGATIVE_Invalid_AdditionalNeed() {
+		 
+		 String payload = payloadManager.createBookingPayloadWithInvalidField("additoinalneeds", 458);
+		 
+		 response = RestAssured.given(requestSpecification)
+				 	.when().body(payload)
+				 	.log().all().post();
+		 
+		 validatableResponse = response.then().log().all();
+		 validatableResponse.statusCode(404);
+		 
+		//Validation and verification via the AssertJ, TestNG Part - 3
+		 assertActions.verifyStatusCode(response, 404);
+	 }
+	 
+	 @Test(groups="reg",priority=20)
+	 @Owner("Mangesh Panchwagh")
+	 @Description("TC#20 - Verify that the Booking can't be Created,Entire Wrong Payload")
+	 public void testCreateBookingPOST_NEGATIVE_EntireWrongPayload() {
+		 
+		 String payload = payloadManager.createPayloadBookingAsEntireWrongPayload();
+		 
+		 response = RestAssured.given(requestSpecification)
+				 	.given().body(payload)
+				 	.log().all().post();
+		 
+		 validatableResponse = response.then().log().all();
+		 validatableResponse.statusCode(404);
+		 
+		//Validation and verification via the AssertJ, TestNG Part - 3
+		 assertActions.verifyStatusCode(response, 404);
+		 
+		 
+				 
+	 }
 }
