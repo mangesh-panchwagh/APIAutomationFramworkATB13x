@@ -1,195 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="20" passed="20" failed="0" skipped="0">
+<testng-results ignored="19" total="20" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-18T23:35:48 IST" name="Default suite" finished-at="2025-09-18T23:36:19 IST" duration-ms="30692">
+  <suite started-at="2025-09-21T00:56:33 IST" name="Default suite" finished-at="2025-09-21T00:56:37 IST" duration-ms="3701">
     <groups>
       <group name="reg">
-        <method signature="TestCreateBooking.testCreateBookingPOST_Positive()[pri:1, instance:tests.restfulbooker.crud.TestCreateBooking@42bc14c1]" name="testCreateBookingPOST_Positive" class="tests.restfulbooker.crud.TestCreateBooking"/>
-        <method signature="TestCreateBooking.testCreateBookingPOST_Negative()[pri:2, instance:tests.restfulbooker.crud.TestCreateBooking@42bc14c1]" name="testCreateBookingPOST_Negative" class="tests.restfulbooker.crud.TestCreateBooking"/>
-        <method signature="TestCreateBooking.testCreateBookingPOST_POSITIVE_CHINISE()[pri:3, instance:tests.restfulbooker.crud.TestCreateBooking@42bc14c1]" name="testCreateBookingPOST_POSITIVE_CHINISE" class="tests.restfulbooker.crud.TestCreateBooking"/>
-        <method signature="TestCreateBooking.testCreateBookingPOST_POSITIVE_FAKER_RANDOM_DATA()[pri:4, instance:tests.restfulbooker.crud.TestCreateBooking@42bc14c1]" name="testCreateBookingPOST_POSITIVE_FAKER_RANDOM_DATA" class="tests.restfulbooker.crud.TestCreateBooking"/>
-        <method signature="TestCreateBooking.testCreateBookingPOST_NEGATIVE_WRONG()[pri:5, instance:tests.restfulbooker.crud.TestCreateBooking@42bc14c1]" name="testCreateBookingPOST_NEGATIVE_WRONG" class="tests.restfulbooker.crud.TestCreateBooking"/>
         <method signature="TestCreateBooking.testCreateBookingPOST_NEGATIVE_BASE_URL()[pri:6, instance:tests.restfulbooker.crud.TestCreateBooking@42bc14c1]" name="testCreateBookingPOST_NEGATIVE_BASE_URL" class="tests.restfulbooker.crud.TestCreateBooking"/>
-        <method signature="TestCreateBooking.testCreateBookingPOST_NEGATIVE_FIRSTNAME_MISSING()[pri:7, instance:tests.restfulbooker.crud.TestCreateBooking@42bc14c1]" name="testCreateBookingPOST_NEGATIVE_FIRSTNAME_MISSING" class="tests.restfulbooker.crud.TestCreateBooking"/>
-        <method signature="TestCreateBooking.testCreateBookingPOST_NEGATIVE_Lastname_MISSING()[pri:8, instance:tests.restfulbooker.crud.TestCreateBooking@42bc14c1]" name="testCreateBookingPOST_NEGATIVE_Lastname_MISSING" class="tests.restfulbooker.crud.TestCreateBooking"/>
-        <method signature="TestCreateBooking.testCreateBookingPOST_NEGATIVE_Totalprice_MISSING()[pri:9, instance:tests.restfulbooker.crud.TestCreateBooking@42bc14c1]" name="testCreateBookingPOST_NEGATIVE_Totalprice_MISSING" class="tests.restfulbooker.crud.TestCreateBooking"/>
-        <method signature="TestCreateBooking.testCreateBookingPOST_NEGATIVE_DepositPaid_MISSING()[pri:10, instance:tests.restfulbooker.crud.TestCreateBooking@42bc14c1]" name="testCreateBookingPOST_NEGATIVE_DepositPaid_MISSING" class="tests.restfulbooker.crud.TestCreateBooking"/>
-        <method signature="TestCreateBooking.testCreateBookingPOST_NEGATIVE_BookingDates_MISSING()[pri:11, instance:tests.restfulbooker.crud.TestCreateBooking@42bc14c1]" name="testCreateBookingPOST_NEGATIVE_BookingDates_MISSING" class="tests.restfulbooker.crud.TestCreateBooking"/>
-        <method signature="TestCreateBooking.testCreateBookingPOST_NEGATIVE_AdditionalNeeds_MISSING()[pri:12, instance:tests.restfulbooker.crud.TestCreateBooking@42bc14c1]" name="testCreateBookingPOST_NEGATIVE_AdditionalNeeds_MISSING" class="tests.restfulbooker.crud.TestCreateBooking"/>
-        <method signature="TestCreateBooking.testCreateBookingPOST_NEGATIVE_Invalid_Firstname()[pri:13, instance:tests.restfulbooker.crud.TestCreateBooking@42bc14c1]" name="testCreateBookingPOST_NEGATIVE_Invalid_Firstname" class="tests.restfulbooker.crud.TestCreateBooking"/>
-        <method signature="TestCreateBooking.testCreateBookingPOST_NEGATIVE_Invalid_Lastname()[pri:14, instance:tests.restfulbooker.crud.TestCreateBooking@42bc14c1]" name="testCreateBookingPOST_NEGATIVE_Invalid_Lastname" class="tests.restfulbooker.crud.TestCreateBooking"/>
-        <method signature="TestCreateBooking.testCreateBookingPOST_NEGATIVE_Invalid_TotalPrice()[pri:15, instance:tests.restfulbooker.crud.TestCreateBooking@42bc14c1]" name="testCreateBookingPOST_NEGATIVE_Invalid_TotalPrice" class="tests.restfulbooker.crud.TestCreateBooking"/>
-        <method signature="TestCreateBooking.testCreateBookingPOST_NEGATIVE_Invalid_DepositPaid()[pri:16, instance:tests.restfulbooker.crud.TestCreateBooking@42bc14c1]" name="testCreateBookingPOST_NEGATIVE_Invalid_DepositPaid" class="tests.restfulbooker.crud.TestCreateBooking"/>
-        <method signature="TestCreateBooking.testCreateBookingPOST_NEGATIVE_Invalid_CheckInDate()[pri:17, instance:tests.restfulbooker.crud.TestCreateBooking@42bc14c1]" name="testCreateBookingPOST_NEGATIVE_Invalid_CheckInDate" class="tests.restfulbooker.crud.TestCreateBooking"/>
-        <method signature="TestCreateBooking.testCreateBookingPOST_NEGATIVE_Invalid_CheckOutDate()[pri:18, instance:tests.restfulbooker.crud.TestCreateBooking@42bc14c1]" name="testCreateBookingPOST_NEGATIVE_Invalid_CheckOutDate" class="tests.restfulbooker.crud.TestCreateBooking"/>
-        <method signature="TestCreateBooking.testCreateBookingPOST_NEGATIVE_Invalid_AdditionalNeed()[pri:19, instance:tests.restfulbooker.crud.TestCreateBooking@42bc14c1]" name="testCreateBookingPOST_NEGATIVE_Invalid_AdditionalNeed" class="tests.restfulbooker.crud.TestCreateBooking"/>
-        <method signature="TestCreateBooking.testCreateBookingPOST_NEGATIVE_EntireWrongPayload()[pri:20, instance:tests.restfulbooker.crud.TestCreateBooking@42bc14c1]" name="testCreateBookingPOST_NEGATIVE_EntireWrongPayload" class="tests.restfulbooker.crud.TestCreateBooking"/>
       </group> <!-- reg -->
     </groups>
-    <test started-at="2025-09-18T23:35:48 IST" name="Default test" finished-at="2025-09-18T23:36:19 IST" duration-ms="30692">
+    <test started-at="2025-09-21T00:56:33 IST" name="Default test" finished-at="2025-09-21T00:56:37 IST" duration-ms="3701">
       <class name="tests.restfulbooker.crud.TestCreateBooking">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.restfulbooker.crud.TestCreateBooking@42bc14c1]" started-at="2025-09-18T23:35:49 IST" name="setup" finished-at="2025-09-18T23:35:49 IST" duration-ms="782" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.restfulbooker.crud.TestCreateBooking@42bc14c1]" started-at="2025-09-21T00:56:33 IST" name="setup" finished-at="2025-09-21T00:56:34 IST" duration-ms="722" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testCreateBookingPOST_Positive()[pri:1, instance:tests.restfulbooker.crud.TestCreateBooking@42bc14c1]" started-at="2025-09-18T23:35:49 IST" name="testCreateBookingPOST_Positive" finished-at="2025-09-18T23:35:53 IST" duration-ms="3639" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCreateBookingPOST_Positive -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.restfulbooker.crud.TestCreateBooking@42bc14c1]" started-at="2025-09-18T23:35:53 IST" name="setup" finished-at="2025-09-18T23:35:53 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="testCreateBookingPOST_Negative()[pri:2, instance:tests.restfulbooker.crud.TestCreateBooking@42bc14c1]" started-at="2025-09-18T23:35:53 IST" name="testCreateBookingPOST_Negative" finished-at="2025-09-18T23:35:54 IST" duration-ms="1353" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCreateBookingPOST_Negative -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.restfulbooker.crud.TestCreateBooking@42bc14c1]" started-at="2025-09-18T23:35:54 IST" name="setup" finished-at="2025-09-18T23:35:54 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="testCreateBookingPOST_POSITIVE_CHINISE()[pri:3, instance:tests.restfulbooker.crud.TestCreateBooking@42bc14c1]" started-at="2025-09-18T23:35:54 IST" name="testCreateBookingPOST_POSITIVE_CHINISE" finished-at="2025-09-18T23:35:56 IST" duration-ms="1361" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCreateBookingPOST_POSITIVE_CHINISE -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.restfulbooker.crud.TestCreateBooking@42bc14c1]" started-at="2025-09-18T23:35:56 IST" name="setup" finished-at="2025-09-18T23:35:56 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="testCreateBookingPOST_POSITIVE_FAKER_RANDOM_DATA()[pri:4, instance:tests.restfulbooker.crud.TestCreateBooking@42bc14c1]" started-at="2025-09-18T23:35:56 IST" name="testCreateBookingPOST_POSITIVE_FAKER_RANDOM_DATA" finished-at="2025-09-18T23:35:58 IST" duration-ms="1751" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCreateBookingPOST_POSITIVE_FAKER_RANDOM_DATA -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.restfulbooker.crud.TestCreateBooking@42bc14c1]" started-at="2025-09-18T23:35:58 IST" name="setup" finished-at="2025-09-18T23:35:58 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="testCreateBookingPOST_NEGATIVE_WRONG()[pri:5, instance:tests.restfulbooker.crud.TestCreateBooking@42bc14c1]" started-at="2025-09-18T23:35:58 IST" name="testCreateBookingPOST_NEGATIVE_WRONG" finished-at="2025-09-18T23:36:00 IST" duration-ms="2275" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCreateBookingPOST_NEGATIVE_WRONG -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.restfulbooker.crud.TestCreateBooking@42bc14c1]" started-at="2025-09-18T23:36:00 IST" name="setup" finished-at="2025-09-18T23:36:00 IST" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="testCreateBookingPOST_NEGATIVE_BASE_URL()[pri:6, instance:tests.restfulbooker.crud.TestCreateBooking@42bc14c1]" started-at="2025-09-18T23:36:00 IST" name="testCreateBookingPOST_NEGATIVE_BASE_URL" finished-at="2025-09-18T23:36:00 IST" duration-ms="638" status="PASS">
+        <test-method signature="testCreateBookingPOST_NEGATIVE_BASE_URL()[pri:6, instance:tests.restfulbooker.crud.TestCreateBooking@42bc14c1]" started-at="2025-09-21T00:56:34 IST" name="testCreateBookingPOST_NEGATIVE_BASE_URL" finished-at="2025-09-21T00:56:37 IST" duration-ms="2820" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCreateBookingPOST_NEGATIVE_BASE_URL -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.restfulbooker.crud.TestCreateBooking@42bc14c1]" started-at="2025-09-18T23:36:00 IST" name="setup" finished-at="2025-09-18T23:36:00 IST" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="testCreateBookingPOST_NEGATIVE_FIRSTNAME_MISSING()[pri:7, instance:tests.restfulbooker.crud.TestCreateBooking@42bc14c1]" started-at="2025-09-18T23:36:00 IST" name="testCreateBookingPOST_NEGATIVE_FIRSTNAME_MISSING" finished-at="2025-09-18T23:36:02 IST" duration-ms="1431" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCreateBookingPOST_NEGATIVE_FIRSTNAME_MISSING -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.restfulbooker.crud.TestCreateBooking@42bc14c1]" started-at="2025-09-18T23:36:02 IST" name="setup" finished-at="2025-09-18T23:36:02 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="testCreateBookingPOST_NEGATIVE_Lastname_MISSING()[pri:8, instance:tests.restfulbooker.crud.TestCreateBooking@42bc14c1]" started-at="2025-09-18T23:36:02 IST" name="testCreateBookingPOST_NEGATIVE_Lastname_MISSING" finished-at="2025-09-18T23:36:03 IST" duration-ms="1312" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCreateBookingPOST_NEGATIVE_Lastname_MISSING -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.restfulbooker.crud.TestCreateBooking@42bc14c1]" started-at="2025-09-18T23:36:03 IST" name="setup" finished-at="2025-09-18T23:36:03 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="testCreateBookingPOST_NEGATIVE_Totalprice_MISSING()[pri:9, instance:tests.restfulbooker.crud.TestCreateBooking@42bc14c1]" started-at="2025-09-18T23:36:03 IST" name="testCreateBookingPOST_NEGATIVE_Totalprice_MISSING" finished-at="2025-09-18T23:36:05 IST" duration-ms="1297" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCreateBookingPOST_NEGATIVE_Totalprice_MISSING -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.restfulbooker.crud.TestCreateBooking@42bc14c1]" started-at="2025-09-18T23:36:05 IST" name="setup" finished-at="2025-09-18T23:36:05 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="testCreateBookingPOST_NEGATIVE_DepositPaid_MISSING()[pri:10, instance:tests.restfulbooker.crud.TestCreateBooking@42bc14c1]" started-at="2025-09-18T23:36:05 IST" name="testCreateBookingPOST_NEGATIVE_DepositPaid_MISSING" finished-at="2025-09-18T23:36:06 IST" duration-ms="1324" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCreateBookingPOST_NEGATIVE_DepositPaid_MISSING -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.restfulbooker.crud.TestCreateBooking@42bc14c1]" started-at="2025-09-18T23:36:06 IST" name="setup" finished-at="2025-09-18T23:36:06 IST" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="testCreateBookingPOST_NEGATIVE_BookingDates_MISSING()[pri:11, instance:tests.restfulbooker.crud.TestCreateBooking@42bc14c1]" started-at="2025-09-18T23:36:06 IST" name="testCreateBookingPOST_NEGATIVE_BookingDates_MISSING" finished-at="2025-09-18T23:36:07 IST" duration-ms="1303" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCreateBookingPOST_NEGATIVE_BookingDates_MISSING -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.restfulbooker.crud.TestCreateBooking@42bc14c1]" started-at="2025-09-18T23:36:07 IST" name="setup" finished-at="2025-09-18T23:36:07 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="testCreateBookingPOST_NEGATIVE_AdditionalNeeds_MISSING()[pri:12, instance:tests.restfulbooker.crud.TestCreateBooking@42bc14c1]" started-at="2025-09-18T23:36:07 IST" name="testCreateBookingPOST_NEGATIVE_AdditionalNeeds_MISSING" finished-at="2025-09-18T23:36:09 IST" duration-ms="1316" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCreateBookingPOST_NEGATIVE_AdditionalNeeds_MISSING -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.restfulbooker.crud.TestCreateBooking@42bc14c1]" started-at="2025-09-18T23:36:09 IST" name="setup" finished-at="2025-09-18T23:36:09 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="testCreateBookingPOST_NEGATIVE_Invalid_Firstname()[pri:13, instance:tests.restfulbooker.crud.TestCreateBooking@42bc14c1]" started-at="2025-09-18T23:36:09 IST" name="testCreateBookingPOST_NEGATIVE_Invalid_Firstname" finished-at="2025-09-18T23:36:10 IST" duration-ms="1323" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCreateBookingPOST_NEGATIVE_Invalid_Firstname -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.restfulbooker.crud.TestCreateBooking@42bc14c1]" started-at="2025-09-18T23:36:10 IST" name="setup" finished-at="2025-09-18T23:36:10 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="testCreateBookingPOST_NEGATIVE_Invalid_Lastname()[pri:14, instance:tests.restfulbooker.crud.TestCreateBooking@42bc14c1]" started-at="2025-09-18T23:36:10 IST" name="testCreateBookingPOST_NEGATIVE_Invalid_Lastname" finished-at="2025-09-18T23:36:11 IST" duration-ms="1351" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCreateBookingPOST_NEGATIVE_Invalid_Lastname -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.restfulbooker.crud.TestCreateBooking@42bc14c1]" started-at="2025-09-18T23:36:11 IST" name="setup" finished-at="2025-09-18T23:36:11 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="testCreateBookingPOST_NEGATIVE_Invalid_TotalPrice()[pri:15, instance:tests.restfulbooker.crud.TestCreateBooking@42bc14c1]" started-at="2025-09-18T23:36:11 IST" name="testCreateBookingPOST_NEGATIVE_Invalid_TotalPrice" finished-at="2025-09-18T23:36:13 IST" duration-ms="1298" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCreateBookingPOST_NEGATIVE_Invalid_TotalPrice -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.restfulbooker.crud.TestCreateBooking@42bc14c1]" started-at="2025-09-18T23:36:13 IST" name="setup" finished-at="2025-09-18T23:36:13 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="testCreateBookingPOST_NEGATIVE_Invalid_DepositPaid()[pri:16, instance:tests.restfulbooker.crud.TestCreateBooking@42bc14c1]" started-at="2025-09-18T23:36:13 IST" name="testCreateBookingPOST_NEGATIVE_Invalid_DepositPaid" finished-at="2025-09-18T23:36:14 IST" duration-ms="1339" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCreateBookingPOST_NEGATIVE_Invalid_DepositPaid -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.restfulbooker.crud.TestCreateBooking@42bc14c1]" started-at="2025-09-18T23:36:14 IST" name="setup" finished-at="2025-09-18T23:36:14 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="testCreateBookingPOST_NEGATIVE_Invalid_CheckInDate()[pri:17, instance:tests.restfulbooker.crud.TestCreateBooking@42bc14c1]" started-at="2025-09-18T23:36:14 IST" name="testCreateBookingPOST_NEGATIVE_Invalid_CheckInDate" finished-at="2025-09-18T23:36:15 IST" duration-ms="1337" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCreateBookingPOST_NEGATIVE_Invalid_CheckInDate -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.restfulbooker.crud.TestCreateBooking@42bc14c1]" started-at="2025-09-18T23:36:15 IST" name="setup" finished-at="2025-09-18T23:36:15 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="testCreateBookingPOST_NEGATIVE_Invalid_CheckOutDate()[pri:18, instance:tests.restfulbooker.crud.TestCreateBooking@42bc14c1]" started-at="2025-09-18T23:36:15 IST" name="testCreateBookingPOST_NEGATIVE_Invalid_CheckOutDate" finished-at="2025-09-18T23:36:16 IST" duration-ms="1286" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCreateBookingPOST_NEGATIVE_Invalid_CheckOutDate -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.restfulbooker.crud.TestCreateBooking@42bc14c1]" started-at="2025-09-18T23:36:17 IST" name="setup" finished-at="2025-09-18T23:36:17 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="testCreateBookingPOST_NEGATIVE_Invalid_AdditionalNeed()[pri:19, instance:tests.restfulbooker.crud.TestCreateBooking@42bc14c1]" started-at="2025-09-18T23:36:17 IST" name="testCreateBookingPOST_NEGATIVE_Invalid_AdditionalNeed" finished-at="2025-09-18T23:36:18 IST" duration-ms="1304" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCreateBookingPOST_NEGATIVE_Invalid_AdditionalNeed -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.restfulbooker.crud.TestCreateBooking@42bc14c1]" started-at="2025-09-18T23:36:18 IST" name="setup" finished-at="2025-09-18T23:36:18 IST" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="testCreateBookingPOST_NEGATIVE_EntireWrongPayload()[pri:20, instance:tests.restfulbooker.crud.TestCreateBooking@42bc14c1]" started-at="2025-09-18T23:36:18 IST" name="testCreateBookingPOST_NEGATIVE_EntireWrongPayload" finished-at="2025-09-18T23:36:19 IST" duration-ms="1298" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCreateBookingPOST_NEGATIVE_EntireWrongPayload -->
-        <test-method is-config="true" signature="trardown()[pri:0, instance:tests.restfulbooker.crud.TestCreateBooking@42bc14c1]" started-at="2025-09-18T23:36:19 IST" name="trardown" finished-at="2025-09-18T23:36:19 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="trardown()[pri:0, instance:tests.restfulbooker.crud.TestCreateBooking@42bc14c1]" started-at="2025-09-21T00:56:37 IST" name="trardown" finished-at="2025-09-21T00:56:37 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- trardown -->

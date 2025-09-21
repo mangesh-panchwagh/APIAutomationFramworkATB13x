@@ -11,4 +11,10 @@ public class APIConstants {
 	// Project #2 - App vwo Login
 	public static String APP_VWO_URL = "https://app.vwo.com/login";
 	// public static String BASE_URL = // Fetch this from Excel file
+	
+	// Project #3
+	public static String BASE_URL_PROJECT_3 = "";
+	public static String UPDATE_STATUS = "";
+	
+	
 }

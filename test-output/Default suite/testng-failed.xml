@@ -7,7 +7,7 @@
         <methods>
           <include name="setup"/>
           <include name="trardown"/>
-          <include name="testCreateBookingPOST_NEGATIVE_AdditionalNeeds_MISSING"/>
+          <include name="testCreateBookingPOST_NEGATIVE_WRONG"/>
         </methods>
       </class> <!-- tests.restfulbooker.crud.TestCreateBooking -->
     </classes>
