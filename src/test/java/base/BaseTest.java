@@ -14,6 +14,7 @@ import io.restassured.response.Response;
 import io.restassured.response.ValidatableResponse;
 import io.restassured.specification.RequestSpecification;
 import modules.restfulbooker.PayloadManager;
+import modules.vwo.VWOPayloadManager;
 
 public class BaseTest {
 
@@ -27,6 +28,7 @@ public class BaseTest {
 	
 	public AssertActions assertActions;
 	public PayloadManager payloadManager;
+	public VWOPayloadManager vwoPayloadManager;
 	public JsonPath jsonpath;	// used for extraction
 	
 	// Before test execution we want to set header and baseURL
@@ -37,6 +39,7 @@ public class BaseTest {
 		
 		System.out.println("Starting of the Test");
 		payloadManager = new PayloadManager();
+		vwoPayloadManager = new VWOPayloadManager();
 		assertActions = new AssertActions();
 		
 //		requestSpecification = RestAssured.given();
@@ -54,5 +57,22 @@ public class BaseTest {
 	public void trardown() {
 		System.out.println("Finished the Test!");
 	}
+	
+	public String getToken() {
+	
+		requestSpecification = RestAssured.given();
+		requestSpecification.baseUri(APIConstants.AUTH_URL);
+		
+		// Setting the payload
+		String payload = payloadManager.setAuthPayload();
+		
+		//Get the token
+		response = requestSpecification.contentType(ContentType.JSON)
+					.body(payload).when().post();
+		
+		String token = payloadManager.getTokenFromJson(response.asString());
+		return token;
+	}
+	
 	
 }

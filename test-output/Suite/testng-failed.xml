@@ -3,17 +3,14 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="tests.restfulbooker.crud.TestCreateBooking">
+      <class name="tests.restfulbooker.e2e_integration.TestIntegrationFlow1">
         <methods>
           <include name="setup"/>
-          <include name="testCreateBookingPOST_POSITIVE_CHINISE"/>
           <include name="trardown"/>
-          <include name="testCreateBookingPOST_POSITIVE_FAKER_RANDOM_DATA"/>
-          <include name="testCreateBookingPOST_Positive"/>
-          <include name="testCreateBookingPOST_Negative"/>
-          <include name="testCreateBookingPOST_NEGATIVE_WRONG"/>
+          <include name="testDeleteBookingById" invocation-numbers="0"/>
+          <include name="testUpdateBookingByID" invocation-numbers="0"/>
         </methods>
-      </class> <!-- tests.restfulbooker.crud.TestCreateBooking -->
+      </class> <!-- tests.restfulbooker.e2e_integration.TestIntegrationFlow1 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
