@@ -34,8 +34,8 @@ public class BaseTest {
 	
 	// Before test execution we want to set header and baseURL
 	
-	@BeforeTest
-	//@BeforeMethod
+	//@BeforeTest
+	@BeforeMethod
 	public void setup() {
 		
 		System.out.println("Starting of the Test");
