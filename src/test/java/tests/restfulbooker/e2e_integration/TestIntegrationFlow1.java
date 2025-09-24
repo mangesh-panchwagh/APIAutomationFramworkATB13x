@@ -78,7 +78,7 @@ public class TestIntegrationFlow1 extends BaseTest{
 	    	iTestContext.setAttribute("token", token);
 	    	
 	    	String basePathPUTPATCH  = APIConstants.CREATE_UPDATE_BOOKING_URL + "/" + bookingid;
-	    	System.out.println("basePathPUTPATCH" + basePathPUTPATCH);
+	    	System.out.println("basePathPUTPATCH : " + basePathPUTPATCH);
 	    	
 	    	requestSpecification.basePath(basePathPUTPATCH);
 	    	

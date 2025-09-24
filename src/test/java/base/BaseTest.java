@@ -3,6 +3,7 @@ package base;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
+import io.restassured.filter.log.LogDetail;
 
 import asserts.AssertActions;
 import endpoints.APIConstants;
@@ -61,7 +62,8 @@ public class BaseTest {
 	public String getToken() {
 	
 		requestSpecification = RestAssured.given();
-		requestSpecification.baseUri(APIConstants.AUTH_URL);
+		requestSpecification.baseUri(APIConstants.BASE_URL)
+							.basePath(APIConstants.AUTH_URL);
 		
 		// Setting the payload
 		String payload = payloadManager.setAuthPayload();
